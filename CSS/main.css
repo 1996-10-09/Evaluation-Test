@@ -1,0 +1,807 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ h1, h2, p, h6, h3{
+font-family: 'Hind Madurai', sans-serif;
+font-family: 'Hind Siliguri', sans-serif;
+font-family: 'Lato', sans-serif;
+}
+body{
+    height: 1015px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.btn{
+  border-radius: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: Hind;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 6px 4px 6px;
+  text-align: center;
+  display: inline-block;
+}
+
+a{
+    text-decoration: none;
+  color:black;
+}
+
+ul{
+    list-style: none;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+section#header{
+    background: url('../images/main-bg.jpg');
+    max-height: 200vh;
+    
+}
+ 
+
+.sub-menu li{
+    line-height: 2rem;
+}
+.sub-menu{
+    width: 10rem;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    border-top: 2px solid #148dd3;
+    background-color: #ffff;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.sub-menu a{
+    color: black;
+     padding: 0 16px;
+    text-decoration: none;
+     display: inline-block;
+    font-family: lato;
+    font-weight: bold;
+    font-size: 10px;
+}
+.sub-menu::before{
+    content: '';
+    position: absolute;
+    top:-2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color:  #148dd3;
+
+}
+.sub-menu .sub-menu{
+    border-left: none;
+    border-top: 3px solid #148dd3;
+    top: 1rem;
+    left: 120%;
+}
+.nav-item:hover > .sub-menu{
+    top:6rem;
+    opacity: 1;
+    visibility:visible;
+
+}
+.sub-menu li:hover > .sub-menu{
+    top:0.4rem;
+    opacity: 1;
+    visibility:visible;
+
+}
+.sub-menu .sub-menu::before{
+    top:-2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: #148dd3;
+}
+
+ #header .nav-item:last-child  {
+    padding-right:5.5em;
+  
+  
+}
+
+#header .nav-item:last-child::after{
+    display: none;
+}
+#header .nav-item .nav-btn{
+    display: inline-block;
+    position: relative;
+    background-color: rgb(22, 21, 21);
+    border: 2px solid rgb(22, 21, 21);
+    border-radius: 0.4rem;
+    color: #eee;
+    font-size: 13px;
+    width: auto;
+    
+}
+
+
+#header  .nav-item {
+  padding: 0 10px;
+  position: relative; 
+  text-align: center; 
+  list-style-type: none; 
+  margin-right: 8px; 
+ 
+}
+#header  .nav-item::after{
+content: "";
+  display: inline-block;
+  width: 1px;
+  height: 25px;
+  background-color: #898989;
+  top: 3px;
+  right: -10px;
+  position: absolute
+}
+#header .navbar-brand {
+  padding-right: 0.9rem;
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+#header .navbar-brand img{
+    width: 100%;
+    max-width: 322px; 
+}
+#header .nav-item .nav-link {
+    color: #363636;
+    font-family: Hind;
+    display: block;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+ }
+
+ #header .nav-item .nav-link:hover {
+    color: #1a94d3;
+  
+}
+#header .nav-item .active::before{
+    content: "";
+  display: inline-block;
+  width: 28px;
+  height: 3px;
+  background-color: #148dd3;
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+.main-part .row .col-md-7 {
+  padding: 15vmin 1vmin;
+  padding-bottom: 35vmin;
+  
+}
+
+.main-part .container-fluid {
+   
+    width: 100%;
+    
+    position: relative;
+    background:url('../images/blueShapeTop.png') center no-repeat;
+    background-size: cover;
+   
+}
+
+.main-part::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    border-bottom: 0;
+    height: 4.7rem;   
+    width: 100%;
+   
+}
+.main-part .row .col-md-5 {
+    padding: 25.5vmin 5vmin;
+    
+   
+}
+
+.main-part .row .col-md-5 img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.main-part .container-fluid .col-md-7 {
+  font-family: lato;
+}
+.main-part .container-fluid .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+.main-part .container-fluid .col-md-7   h1 {
+  font-size: 8.5vmin;
+  
+  
+}
+.main-part .container-fluid .col-md-7   h1::before{
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 5px;
+    background-color: #148dd3;
+    position: absolute;
+    right: 40%;
+    top: -5px;
+}
+.main-part .container .col-md-7  .line {
+    margin-right: 10rem;
+}
+
+.main-part  .container-fluid .col-md-7 p.sub-heading{
+    font-weight: bold;
+    font-size:8.5vmin;
+    
+}
+.main-part .container-fluid .col-md-7 button.btn-main{
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #1a94d3;     
+     background-image: linear-gradient(to top, #0e89c8 0%, #1a94d3 50%, #1a94d3 100%, #0875ae 100%, #0e89c8 100%);
+     color: #fff;
+    font-size: 12px;
+   
+    border: 1px solid #1a94d3;
+    padding: 2vmin 5vmin;
+    
+}
+ .top-bar{
+   
+    display: flex;
+    width:100%;
+    height:4rem;
+    width: 100%;
+  height: 50px;
+  background-color: #ebebeb;
+  text-align: right;
+  padding: 0px 55px;
+  box-sizing: border-box;
+    
+
+}
+  .top-bar p {
+    padding: 5px 20px;
+    border: 0;
+    position: absolute;
+    right: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #252525;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+  .top-bar   img{
+    height: 1.8rem;
+    padding:0 20px;
+    border: 0;
+    left:0%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 19px;
+    
+    
+}
+
+/*===================SME DISTRIBUTORI STARTS==================================*/
+.header-extradiv{
+    width: 100%;
+    height: 100vh;
+    background: #148dd3;
+    -webkit-clip-path: ellipse(71% 59% at 50% 40%);
+    clip-path: ellipse(71% 59% at 50% 40%);
+    position: relative;
+   
+}
+.header-extradiv .section-heading{
+    margin: 3rem 10rem;
+    color: #fff;
+   
+}
+
+.header-extradiv p{
+   align-items: center;
+    font-size: 15px;
+    color: #fff;
+}
+.header-extradiv .section-heading h2::before{
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    right: 60%;
+    top: -5px;
+}
+
+
+.header-extradiv .section-heading h2::after{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: .8rem;
+    bottom: -1rem;
+}
+.header-extradiv .section-heading h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 2rem;
+ 
+}
+.header-extradiv .jsme{
+    border: medium none;
+    padding: 50px !important;
+    
+    transition: 0.3s;
+    
+}
+.header-extradiv .jsme::after{
+    content: "";
+  display: inline-block;
+  width: 2px;
+  height: 350px;
+  background-color: #dbd2d2;
+  top: 0px;
+  right: -23px;
+  position: absolute;
+}
+.header-extradiv .jsme:last-child::after{
+    display: none;
+}
+
+.header-extradiv .jsme img{
+    margin-bottom: 2rem;
+}
+
+.header-extradiv .jsme .btn-jsme{
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 50px;
+    margin: 14px auto;
+}
+
+/*====================SME DISTRIBUTORI ENDS=================================*/
+
+/*====================SLIDER LOGAMA STARTS=================================*/
+ .slider{
+	background:#fff;
+	background-position: right;
+	background-repeat: no-repeat;
+	margin-top: 3rem;
+	width:100%;
+ }
+ .slider .logama{
+	padding-top: 3rem;
+}
+ .logama .logo{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 80%;
+	margin: 3rem 2rem;
+	
+}
+.slider .section-heading  h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.slider .section-heading  h1::before{
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 5px;
+    background-color: #148dd3;
+    position: absolute;
+    right: 90%;
+    top: -5px;
+}
+.slider .section-heading .line{
+    margin-left: 57%;
+}
+	
+
+/*====================SLIDER LOGAMA  ENDS=================================*/
+/*======================SECTION-THREE STARTS===============================================*/
+
+.section-three{
+    margin-top: 5rem;
+    background-color: rgb(201, 195, 195);
+    padding: 50px 0;
+    min-height: 80vh;
+   
+}
+.section-three .section-heading{
+    margin-bottom: 30px;
+    
+}
+.section-three  .info .section-heading h1{
+    
+   
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.section-three  .info .section-heading h1::before{
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    right: 45%;
+    top: -6px;
+}
+.section-three  .info .section-heading .line {
+    margin-left: 25rem;
+    
+   
+}
+.section-three .info p{
+    font-size: 1rem;
+    display: block;
+    margin-left: 2rem;
+   
+    
+}
+.section-three .servicediv{
+    padding-left: 5rem;
+}
+.section-three .servicediv .servise-icon img, .servise-icons img{
+    display: flex;
+    margin-right: 6rem;
+    margin-bottom: 20%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.section-three .servicediv .servise-icon {
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+
+.section-three .servicediv .servise-icon p, .servise-icons p{
+  font-size: 10px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+  
+   
+}
+.section-three .servicediv .servise-icon::before{
+    content:' ';
+    align-content: center;
+    width: 150%;
+    height:1px;
+    display: block;
+    background: rgb(54, 53, 53);
+    margin-bottom: 3rem;
+}
+
+
+ .section-three-bottom {
+    background-color: #148dd3;
+    height: 20vh;
+    
+}
+.section-three-bottom .btn-nase-reference{
+    
+    font-size: 20px;
+    width: 20%;
+    height: 4rem;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 2rem 40%;
+    color: #1a93d2;
+    background-image: linear-gradient(to top, #eff1f2 0%, #ffffff 100%, #ffffff 100%);
+    border: 2px solid #1a93d2;
+}
+.section-three-bottom .btn-nase-reference:hover{
+    opacity: 0.7;
+}
+/*====================== SECTION-THREE ENDS===========================================*/
+
+
+/*======================SECTION NOVINKY STARTS===============================================*/
+section.nonviky{
+    padding: 20vmin 0;
+    width: 100%;
+    max-width: 117rem;
+    margin: 100px auto;
+    
+}
+ section.nonviky .container{
+    display: flex;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+   
+    background-color: white;
+    position: relative;
+    margin: 0 1.5rem;
+
+
+}
+
+ section.nonviky .container .container-content{
+    width: 50%;
+}
+ section.nonviky .container .container-content-inner{
+   
+    margin-left: 80px;
+}
+ section.nonviky .container .container-content-inner .title{
+    overflow: hidden;
+    height: auto;
+
+}
+
+ section.nonviky .container .container-content-inner .title h1{
+    font-size: 40px;
+    color:black;
+    margin-bottom: 20px;
+    
+}
+section.nonviky .container .container-content-inner .title h1::before{
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 5px;
+    background-color: #148dd3;
+    position: absolute;
+    right: 50%;
+    top: -5px;
+}
+ section.nonviky .container .container-content-inner .title span.vertical-line{
+    border-top: 1px solid #148dd3;
+    border-width: 5rem;
+   
+}
+
+
+ section.nonviky .container .container-outer-img{
+    margin: 30px 0;
+    width: 60%;
+    overflow: hidden;
+    height:60%;
+}
+ section.nonviky .container .container-outer-img .img-inner{
+    width: auto;
+   
+}
+ section.nonviky .container .container-content .paragraph{
+    height: auto;
+    overflow: hidden;
+    margin-left: 80px;
+
+}
+ section.nonviky .container .container-content  .paragraph h2{
+    font-size: 20px;
+    color:#148dd3;
+    margin-bottom: 20px;
+   
+}
+ 
+
+ section.nonviky .container .container-content  .btn{
+    height: auto;
+    position: relative;
+    margin-left: 60%;
+    width: 200px;
+    overflow: hidden;
+}
+ section.nonviky .container .container-content  .btn .btns-novinky{
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #148dd3;
+    width: 100%;
+    border: 1px solid #148dd3;
+    border-radius: 3px;
+    padding: 8px 15px;
+    font-size: 15px;
+    position: relative;
+    margin-top: 15px;
+    outline: none;
+    float:right;
+   
+}
+section.nonviky .container .container-content  .btn .btns-novinky:hover{
+    background: #ffffff;
+    color: #1a94d3;
+}
+/*======================= SECTION NONVIKY  ENDS==============================================*/
+
+.kontakt{
+    margin: 5vmin;
+   
+}
+.kontakt .col-md-12{
+    padding: 2em 0 0.5em 0;
+
+}
+.kontakt .kontakt-details .phone{
+    background: #fff;
+    display: inline-block;
+    padding: 2vmin 4.5vmin;
+    margin: 1em 0;
+    
+
+}
+.kontakt .kontakt-details .phone::after{
+content: "";
+display: inline-block;
+width: 2px;
+height: 150px;
+background-color: #898989;
+top: 0px;
+right: -23px;
+position: absolute;
+}
+.kontakt .kontakt-details .email{
+    background: #fff;
+    display: inline-block;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+  
+
+}
+ .kontakt .kontakt-details .phone h2{
+     font-size: 5vmin;
+ }   
+footer#footer{
+     background-color: #03051e;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+}
+footer#footer .footer-top{
+    background-color:rgb(3, 3, 31) ;
+    padding: 60px 0 20px 0;
+    margin-left: 7rem;
+
+}
+footer#footer .footer-top h4{
+    color: #ffffff;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  text-decoration: underline;
+  text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+footer#footer .footer-top .footer-info{
+    margin-bottom: 30px;
+    
+}
+footer#footer .footer-top .footer-info img{
+    width:60%;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+
+}
+footer#footer .footer-top .footer-info p{
+    
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 25px;  
+}
+footer#footer .footer-top .footer-nabidka{
+    margin-bottom: 30px;
+}
+footer#footer .footer-top .footer-nabidka ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer#footer .footer-top .footer-nabidka ul li:hover{
+    color:#148dd3;
+}
+footer#footer .footer-top .footer-nabidka ul li{
+    padding: 8px 0;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+     text-decoration: none;  
+}
+footer#footer .footer-top .footer-kontakt{
+    margin-bottom: 30px;
+}
+footer#footer .footer-top .footer-kontakt ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer#footer .footer-top .footer-kontakt ul li{
+    padding: 3px 0;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px; 
+}
+.footer#footer .footer-top .footer-kontakt .footer-contact-bottom li{
+    margin-top: 1rem !important;
+    
+}
+footer#footer .footer-top .footer-kontakt ul li:first-child{
+    padding-top: 0;
+}
+footer#footer .footer-top .footer-social{
+    margin-bottom: 30px;
+}
+footer#footer .footer-top .footer-social ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer#footer .footer-top .footer-social ul li{
+    padding: 3px 0;
+    color: gray;
+}
+footer#footer .footer-top .footer-social ul li:first-child{
+    padding-top: 0;
+}
+
+  .footer-bottom{
+    background-color: #fff;
+     height:auto;
+  
+     border-bottom: 2px solid #148dd3;
+}
+.footer-bottom h4{
+    color: black;
+    font-size: 10px;
+}
